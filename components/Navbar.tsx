@@ -1,13 +1,43 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { NAV_LINKS } from "@/constants";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
+        <Image src="/SparrowHNarrow.png" alt="logo" width={74} height={100} />
       </Link>
+      <ul className="hidden h-full gap-12 lg:flex">
+        {/* default hidden, height full, 12 gap between, flex on large devices*/}
+        {NAV_LINKS.map((link) => (
+          <Link
+            href={link.href}
+            key={link.key}
+            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </ul>
+      <div className="lg:flexCenter hidden">
+        <Button
+          type="button"
+          title="Log In"
+          icon="/user.svg"
+          variant="btn_dark_green"
+        />
+      </div>
+
+      <Image
+        src="menu.svg"
+        alt="menu"
+        width={32}
+        height={32}
+        className="inline-block cursor-pointer lg:hidden"
+      />
     </nav>
   );
 };
