@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/src/app/components/Navbar";
-import Footer from "@/src/app/components/Footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sparrowhawk Trees",

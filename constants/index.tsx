@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_hilink_work", label: "About" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Gallery" },
-  { href: "/", key: "contact_us", label: "Contact" },
+  { href: "/about", key: "about", label: "About" },
+  { href: "/services", key: "services", label: "Services" },
+  { href: "/gallery", key: "gallery ", label: "Gallery" },
+  { href: "/contact", key: "contact", label: "Contact" },
 ];
 
 // CAMP SECTION
@@ -52,25 +52,24 @@ export const FOOTER_LINKS = [
   {
     title: "Learn More",
     links: [
-      "About Hilink",
-      "Press Releases",
-      "Environment",
-      "Jobs",
+      "About Sparrowhawk Trees",
+      "Something Else",
+      "Another Thing",
       "Privacy Policy",
-      "Contact Us",
+      "Get in Touch",
     ],
   },
   {
-    title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+    title: "Optional Link",
+    links: ["Link 1", "Link 2", "Link 3"],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
+    { label: "Phone", value: "123-456-7890" },
+    { label: "Email", value: "name@something.com" },
   ],
 };
 

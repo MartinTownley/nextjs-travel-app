@@ -4,7 +4,7 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-      <div className="hero-map" />
+      {/* <div className="hero-map" /> */}
       {/* LEFT */}
 
       {/* Title and description */}
@@ -16,7 +16,7 @@ const Hero = () => {
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         /> */}
-        <h1 className="bold-52 lg:bold-88">Sparrowhawk Trees</h1>
+        <h1 className="bold-52 lg:bold-88">Title</h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum
           incidunt repellendus expedita omnis, accusantium consequuntur nemo
@@ -29,7 +29,7 @@ const Hero = () => {
 
         {/* Review stars*/}
 
-        <div className="my-11 flex flex-wrap gap-5">
+        {/* <div className="my-11 flex flex-wrap gap-5">
           <div className="flex items-center gap-2">
             {Array(5)
               .fill(1)
@@ -50,7 +50,7 @@ const Hero = () => {
               Excellent Reviews
             </span>
           </p>
-        </div>
+        </div> */}
 
         {/* Buttons */}
         <div className="flex flex-col w-full gap-3 sm:flex-row">
